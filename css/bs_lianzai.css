@@ -1,0 +1,15 @@
+
+#right_lzml{
+			width: 100px;height: 300px; float:right; right:10px;  
+			top:350px; position: fixed;
+			background-color:#e7ecdd;z-index:3;
+	  		margin: 0px;padding:0px; border:1px solid #e6e6e6; border-radius: 5px;
+		}
+		ul li{	list-style-type:none; cursor:pointer;color:#666666;}
+		 
+		a{color:#666666;text-decoration:none;}
+		a:link {text-decoration: none;color:blue;}			 /* 鼠标点击过了  */
+		a:visited {color:#666666; text-decoration:none;}     /* 点击了 */
+		a:active {color:white;text-decoration:none;}  	 /* 没有点击过 */
+		a:hover  {color:#666666;text-decoration:underline;}  /* 鼠标接近 */
+		
