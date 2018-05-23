@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>多一个页面在同一个div跳转</title>
+
+<link type="text/css"  href="//lib.baomitu.com/twitter-bootstrap/3.3.0/css/bootstrap.css" rel="stylesheet" media="screen"/>
+<link type="text/css"  href="//lib.baomitu.com/jqueryui/1.12.1/jquery-ui.css" rel="stylesheet">
+<link type="text/css"  href="css/bs_index.css" rel="stylesheet"/> <!-- 页面css -->
+
+</head>
+<body>
+	
+	<div class="row bodyDiv" style="margin-right: 0px;"> 
+
+<!-- 左边栏 -->
+<div class="col-md-2  leftDiv" >
+<!-- 左边栏，目录 -->
+<div class="row left_mlDiv">
+	<ul style="padding-bottom: 20px;">
+		<li style="margin-left: 20px;"><a href="#aaa">网站公告</a></li>
+		<li style="margin-top: 10px;margin-left: 20px;"><a href="html/lm_lianzai.html">27卷小说连载</a></li>
+		
+	</ul>
+	
+</div>
+	
+</div>	
+
+<!-- 右边栏  -->	
+	<div class="col-md-9  rightDiv" >
+ 
+		<div id="row"  style="width: 100%;">
+<!-- 第一个链接需要在这里设置！ -->		
+			<div style="overflow:hidden;text-overflow:ellipsis;" id="aaa" > 
+			<h2><a  style="color:red; text-decoration: none;" target="_blank" href="http://tieba.baidu.com/f?kw=%E4%BA%8C%E6%AC%A1%E5%85%83%E7%9A%84%E7%A8%8B%E5%BA%8F%E5%91%98&fr=home">绯弹的亚里亚（小说）</a></h2>
+			<span style="color: #00a2e3">祝各位2018新春快乐！</span>
+			
+			<p>时光匆匆，又是一年，萌新我已经从学院走出了社会，</p>
+			<p>在公司中，或许以后大半生都是在工作中度过了，</p>
+			<p>要是工作很无趣的话，那确实可谓不幸，</p>
+			<p>毕竟那就相当于人生的大半都过的很无趣，</p>
+			<p>将无趣的世界变得有趣，能否就之生活全凭心态而定！</p>
+			
+			<hr>
+			
+			<hr>
+
+<!-- 公告说明 -->			
+			<div id="notice_div" style="width: 100%;height:80px;margin-top:10px;
+			text-align: center;background: #333333;border-radius: 5px;">
+				
+			<div id="lxBotton_hr">
+				<hr style="margin:10px; ">
+				<span>にじげん の プログラマー  © 2018.緋弾のアリア 翻译 </span> &nbsp;&nbsp;&nbsp;
+				<span><a style="color: #fff;" target="_blank" href="http://www.miitbeian.gov.cn">粤xxxx号</a></span>
+			</div>
+			</div>
+		</div>
+		
+		</div>
+		
+	</div>
+
+</div>
+	
+	
+  <script type="text/javascript" src="https://lib.baomitu.com/jquery/1.8.3/jquery.js"></script>
+  <script type="text/javascript" src="//lib.baomitu.com/jqueryui/1.12.1/jquery-ui.min.js"></script>  
+<script>
+	$(document).ready(function(){
+		
+		  $(".bodyDiv").tabs({
+	 		cache:true, //隐藏：启动
+	 });
+		  
+	 });	  
+	console.log('%c看什么看！','font-size:30px;color:red');
+</script>
+	
+</body>
+</html>
